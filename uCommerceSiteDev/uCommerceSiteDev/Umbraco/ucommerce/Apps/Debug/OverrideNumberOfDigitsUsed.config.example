@@ -1,0 +1,9 @@
+﻿<configuration>
+	<components>
+		<partial-component id="RoundingService">
+			<parameters>
+				<NumberOfDigits>4</NumberOfDigits>
+			</parameters>
+		</partial-component>
+	</components>
+</configuration>
