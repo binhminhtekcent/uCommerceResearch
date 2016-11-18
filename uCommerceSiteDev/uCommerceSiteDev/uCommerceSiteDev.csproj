@@ -2983,6 +2983,25 @@
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
+    <Compile Include="Models\AddressDetailsViewModel.cs" />
+    <Compile Include="Models\AddressViewModel.cs" />
+    <Compile Include="Models\AddToBasketViewModel.cs" />
+    <Compile Include="Models\BreadcrumbsViewModel.cs" />
+    <Compile Include="Models\CategoryNavigationViewModel.cs" />
+    <Compile Include="Models\CategoryViewModel.cs" />
+    <Compile Include="Models\FacetsDisplayedViewModel.cs" />
+    <Compile Include="Models\FacetValueViewModel.cs" />
+    <Compile Include="Models\FacetViewModel.cs" />
+    <Compile Include="Models\MiniBasketViewModel.cs" />
+    <Compile Include="Models\OrderlineViewModel.cs" />
+    <Compile Include="Models\PaymentViewModel.cs" />
+    <Compile Include="Models\ProductPageViewModel.cs" />
+    <Compile Include="Models\ProductPropertiesViewModel.cs" />
+    <Compile Include="Models\ProductReviewViewModel.cs" />
+    <Compile Include="Models\ProductsViewModel.cs" />
+    <Compile Include="Models\ProductViewModel.cs" />
+    <Compile Include="Models\PurchaseOrderViewModel.cs" />
+    <Compile Include="Models\ShippingViewModel.cs" />
     <Compile Include="obj\Debug\TemporaryGeneratedFile_036C0B5B-1481-4323-8D20-8F5ADCB23D92.cs" />
     <Compile Include="obj\Debug\TemporaryGeneratedFile_5937a670-0e60-4077-877b-f7221da3dda1.cs" />
     <Compile Include="obj\Debug\TemporaryGeneratedFile_E7A71F73-0F8D-4B9B-B56E-8E70B10BC5D3.cs" />
@@ -3165,7 +3184,6 @@
   <ItemGroup>
     <Folder Include="App_Data\" />
     <Folder Include="Controllers\" />
-    <Folder Include="Models\" />
     <Folder Include="obj\Debug\TempPE\" />
   </ItemGroup>
   <ItemGroup>
