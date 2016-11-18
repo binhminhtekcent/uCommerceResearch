@@ -258,6 +258,38 @@
       <HintPath>..\packages\UmbracoCms.Core.7.5.4\lib\TidyNet.dll</HintPath>
       <Private>True</Private>
     </Reference>
+    <Reference Include="UCommerce, Version=7.2.2.16293, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\uCommerce.Core.7.2.2.16293\lib\net400\UCommerce.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="UCommerce.Admin, Version=7.2.2.16293, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\uCommerce.Core.7.2.2.16293\lib\net400\UCommerce.Admin.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="UCommerce.Infrastructure, Version=7.2.2.16293, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\uCommerce.Core.7.2.2.16293\lib\net400\UCommerce.Infrastructure.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="UCommerce.Installer, Version=7.2.2.16293, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\uCommerce.Core.7.2.2.16293\lib\net400\UCommerce.Installer.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="UCommerce.Pipelines, Version=7.2.2.16293, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\uCommerce.Core.7.2.2.16293\lib\net400\UCommerce.Pipelines.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="UCommerce.Presentation, Version=7.2.2.16293, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\uCommerce.Core.7.2.2.16293\lib\net400\UCommerce.Presentation.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="UCommerce.Transactions.Payments, Version=7.2.2.16293, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\uCommerce.Core.7.2.2.16293\lib\net400\UCommerce.Transactions.Payments.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="UCommerce.Web.Api, Version=7.2.2.16293, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\uCommerce.Core.7.2.2.16293\lib\net400\UCommerce.Web.Api.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
     <Reference Include="umbraco, Version=1.0.6136.27248, Culture=neutral, processorArchitecture=MSIL">
       <HintPath>..\packages\UmbracoCms.Core.7.5.4\lib\umbraco.dll</HintPath>
       <Private>True</Private>
@@ -2942,7 +2974,9 @@
     <Content Include="Umbraco_Client\Ui\ui-lightness\images\ui-icons_ffd27a_256x240.png" />
     <Content Include="Umbraco_Client\Ui\ui-lightness\images\ui-icons_ffffff_256x240.png" />
     <Content Include="Umbraco_Client\Ui\ui-lightness\jquery-ui.custom.css" />
-    <Content Include="Web.config" />
+    <Content Include="Web.config">
+      <SubType>Designer</SubType>
+    </Content>
   </ItemGroup>
   <ItemGroup>
     <Compile Include="App_Start\RouteConfig.cs" />
