@@ -3419,12 +3419,25 @@
     <Content Include="Umbraco\Xslt\Web.config" />
     <Content Include="App_Browsers\Form.browser" />
     <Content Include="App_Browsers\w3cvalidator.browser" />
+    <Content Include="Views\FeatureItem.cshtml" />
+    <Content Include="Views\Home.cshtml" />
+    <Content Include="Views\HomeTemplate.cshtml" />
+    <Content Include="Views\Navigation.cshtml" />
+    <Content Include="Views\MacroPartials\Brands_Products.cshtml" />
+    <Content Include="Views\MacroPartials\Category_Products.cshtml" />
+    <Content Include="Views\MacroPartials\Feature_Item.cshtml" />
+    <Content Include="Views\MacroPartials\Footer.cshtml" />
+    <Content Include="Views\MacroPartials\Meta_Head.cshtml" />
+    <Content Include="Views\MacroPartials\Slider.cshtml" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>
+    <None Include="web.development.xdt.config" />
+    <None Include="web.live.xdt.config" />
     <None Include="Web.Release.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>
+    <None Include="web.staging.xdt.config" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />

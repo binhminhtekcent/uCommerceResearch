@@ -19,7 +19,7 @@ using Umbraco.ModelsBuilder;
 using Umbraco.ModelsBuilder.Umbraco;
 
 [assembly: PureLiveAssembly]
-[assembly:ModelsBuilderAssembly(PureLive = true, SourceHash = "988de559b8844059")]
+[assembly:ModelsBuilderAssembly(PureLive = true, SourceHash = "e04c86c379d5c04")]
 [assembly:System.Reflection.AssemblyVersion("0.0.0.1")]
 
 namespace Umbraco.Web.PublishedContentModels
@@ -353,6 +353,94 @@ namespace Umbraco.Web.PublishedContentModels
 		public IHtmlString Content
 		{
 			get { return this.GetPropertyValue<IHtmlString>("content"); }
+		}
+	}
+
+	/// <summary>Slider</summary>
+	[PublishedContentModel("slider")]
+	public partial class Slider : PublishedContentModel
+	{
+#pragma warning disable 0109 // new is redundant
+		public new const string ModelTypeAlias = "slider";
+		public new const PublishedItemType ModelItemType = PublishedItemType.Content;
+#pragma warning restore 0109
+
+		public Slider(IPublishedContent content)
+			: base(content)
+		{ }
+
+#pragma warning disable 0109 // new is redundant
+		public new static PublishedContentType GetModelContentType()
+		{
+			return PublishedContentType.Get(ModelItemType, ModelTypeAlias);
+		}
+#pragma warning restore 0109
+
+		public static PublishedPropertyType GetModelPropertyType<TValue>(Expression<Func<Slider, TValue>> selector)
+		{
+			return PublishedContentModelUtility.GetModelPropertyType(GetModelContentType(), selector);
+		}
+	}
+
+	/// <summary>Slider Item</summary>
+	[PublishedContentModel("sliderItem")]
+	public partial class SliderItem : Slider
+	{
+#pragma warning disable 0109 // new is redundant
+		public new const string ModelTypeAlias = "sliderItem";
+		public new const PublishedItemType ModelItemType = PublishedItemType.Content;
+#pragma warning restore 0109
+
+		public SliderItem(IPublishedContent content)
+			: base(content)
+		{ }
+
+#pragma warning disable 0109 // new is redundant
+		public new static PublishedContentType GetModelContentType()
+		{
+			return PublishedContentType.Get(ModelItemType, ModelTypeAlias);
+		}
+#pragma warning restore 0109
+
+		public static PublishedPropertyType GetModelPropertyType<TValue>(Expression<Func<SliderItem, TValue>> selector)
+		{
+			return PublishedContentModelUtility.GetModelPropertyType(GetModelContentType(), selector);
+		}
+
+		///<summary>
+		/// Description
+		///</summary>
+		[ImplementPropertyType("description")]
+		public IHtmlString Description
+		{
+			get { return this.GetPropertyValue<IHtmlString>("description"); }
+		}
+
+		///<summary>
+		/// Introduce
+		///</summary>
+		[ImplementPropertyType("introduce")]
+		public string Introduce
+		{
+			get { return this.GetPropertyValue<string>("introduce"); }
+		}
+
+		///<summary>
+		/// Price Logo
+		///</summary>
+		[ImplementPropertyType("priceLogo")]
+		public string PriceLogo
+		{
+			get { return this.GetPropertyValue<string>("priceLogo"); }
+		}
+
+		///<summary>
+		/// Title
+		///</summary>
+		[ImplementPropertyType("title")]
+		public string Title
+		{
+			get { return this.GetPropertyValue<string>("title"); }
 		}
 	}
 
