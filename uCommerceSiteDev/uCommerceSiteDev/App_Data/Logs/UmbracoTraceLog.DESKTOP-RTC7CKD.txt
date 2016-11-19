@@ -177,3 +177,308 @@ _shutDownStack=   at System.Environment.GetStackTrace(Exception e, Boolean needF
  2016-11-20 00:05:45,736 [P7740/D8/T72] INFO  Umbraco.Core.PluginManager - Completed resolution of types of umbraco.interfaces.ITree, found 0 (took 14ms)
  2016-11-20 00:05:45,757 [P7740/D8/T72] INFO  Umbraco.Core.PluginManager - Starting resolution types of umbraco.interfaces.IApplication
  2016-11-20 00:05:45,783 [P7740/D8/T72] INFO  Umbraco.Core.PluginManager - Completed resolution of types of umbraco.interfaces.IApplication, found 0 (took 25ms)
+ 2016-11-20 00:09:05,994 [P7740/D8/T84] INFO  Umbraco.Core.UmbracoApplicationBase - Application shutdown. Details: ConfigurationChange
+
+_shutDownMessage=Change in App_Offline.htm
+HostingEnvironment initiated shutdown
+Change in App_Offline.htm
+Change in App_Offline.htm
+Change in App_Offline.htm
+Change in App_Offline.htm
+Change in App_Offline.htm
+Change in App_Offline.htm
+Change in App_Offline.htm
+Change in App_Offline.htm
+Change in App_Offline.htm
+HostingEnvironment caused shutdown
+
+_shutDownStack=   at System.Environment.GetStackTrace(Exception e, Boolean needFileInfo)
+   at System.Environment.get_StackTrace()
+   at System.Web.Hosting.HostingEnvironment.InitiateShutdownInternal()
+   at System.Web.Hosting.HostingEnvironment.InitiateShutdownWithoutDemand()
+   at System.Web.HttpRuntime.ShutdownAppDomain(String stackTrace)
+   at System.Web.HttpRuntime.OnAppOfflineFileChange(Object sender, FileChangeEvent e)
+   at System.Web.DirectoryMonitor.FireNotifications()
+   at System.Web.Util.WorkItem.CallCallbackWithAssert(WorkItemCallback callback)
+   at System.Web.Util.WorkItem.OnQueueUserWorkItemCompletion(Object state)
+   at System.Threading.ExecutionContext.RunInternal(ExecutionContext executionContext, ContextCallback callback, Object state, Boolean preserveSyncCtx)
+   at System.Threading.ExecutionContext.Run(ExecutionContext executionContext, ContextCallback callback, Object state, Boolean preserveSyncCtx)
+   at System.Threading.QueueUserWorkItemCallback.System.Threading.IThreadPoolWorkItem.ExecuteWorkItem()
+   at System.Threading.ThreadPoolWorkQueue.Dispatch()
+ 2016-11-20 00:09:27,804 [P7740/D9/T84] INFO  Umbraco.Core.UmbracoApplicationBase - Application shutdown. Details: ConfigurationChange
+
+_shutDownMessage=Change in App_Offline.htm
+HostingEnvironment initiated shutdown
+Change in App_Offline.htm
+Change in App_Offline.htm
+Change in App_Offline.htm
+Change in App_Offline.htm
+Change in App_Offline.htm
+Change in App_Offline.htm
+Change in App_Offline.htm
+Change in App_Offline.htm
+Change in App_Offline.htm
+Change in App_Offline.htm
+Change Notification for critical directories.
+App_GlobalResources dir change or directory rename
+Change Notification for critical directories.
+App_GlobalResources dir change or directory rename
+Change Notification for critical directories.
+App_GlobalResources dir change or directory rename
+Change in C:\Windows\Microsoft.NET\Framework64\v4.0.30319\Temporary ASP.NET Files\root\da9cd0bb\f4e9a0bf\hash\hash.web
+Change in C:\Windows\Microsoft.NET\Framework64\v4.0.30319\Temporary ASP.NET Files\root\da9cd0bb\f4e9a0bf\hash\hash.web
+Change Notification for critical directories.
+App_GlobalResources dir change or directory rename
+Change Notification for critical directories.
+App_GlobalResources dir change or directory rename
+Change Notification for critical directories.
+App_GlobalResources dir change or directory rename
+Change Notification for critical directories.
+App_GlobalResources dir change or directory rename
+Change Notification for critical directories.
+App_GlobalResources dir change or directory rename
+Change Notification for critical directories.
+App_GlobalResources dir change or directory rename
+Change Notification for critical directories.
+App_GlobalResources dir change or directory rename
+Change Notification for critical directories.
+App_GlobalResources dir change or directory rename
+Change Notification for critical directories.
+App_GlobalResources dir change or directory rename
+Change Notification for critical directories.
+App_GlobalResources dir change or directory rename
+Change Notification for critical directories.
+App_GlobalResources dir change or directory rename
+Change Notification for critical directories.
+App_GlobalResources dir change or directory rename
+Change Notification for critical directories.
+App_GlobalResources dir change or directory rename
+Change Notification for critical directories.
+App_GlobalResources dir change or directory rename
+Change Notification for critical directories.
+App_GlobalResources dir change or directory rename
+Change Notification for critical directories.
+App_GlobalResources dir change or directory rename
+Change Notification for critical directories.
+App_GlobalResources dir change or directory rename
+Change Notification for critical directories.
+App_GlobalResources dir change or directory rename
+Change Notification for critical directories.
+App_GlobalResources dir change or directory rename
+Change Notification for critical directories.
+App_GlobalResources dir change or directory rename
+Change Notification for critical directories.
+App_GlobalResources dir change or directory rename
+Change Notification for critical directories.
+App_GlobalResources dir change or directory rename
+Change Notification for critical directories.
+App_GlobalResources dir change or directory rename
+HostingEnvironment caused shutdown
+
+_shutDownStack=   at System.Environment.GetStackTrace(Exception e, Boolean needFileInfo)
+   at System.Environment.get_StackTrace()
+   at System.Web.Hosting.HostingEnvironment.InitiateShutdownInternal()
+   at System.Web.Hosting.HostingEnvironment.InitiateShutdownWithoutDemand()
+   at System.Web.HttpRuntime.ShutdownAppDomain(String stackTrace)
+   at System.Web.HttpRuntime.OnAppOfflineFileChange(Object sender, FileChangeEvent e)
+   at System.Web.DirectoryMonitor.FireNotifications()
+   at System.Web.Util.WorkItem.CallCallbackWithAssert(WorkItemCallback callback)
+   at System.Web.Util.WorkItem.OnQueueUserWorkItemCompletion(Object state)
+   at System.Threading.ExecutionContext.RunInternal(ExecutionContext executionContext, ContextCallback callback, Object state, Boolean preserveSyncCtx)
+   at System.Threading.ExecutionContext.Run(ExecutionContext executionContext, ContextCallback callback, Object state, Boolean preserveSyncCtx)
+   at System.Threading.QueueUserWorkItemCallback.System.Threading.IThreadPoolWorkItem.ExecuteWorkItem()
+   at System.Threading.ThreadPoolWorkQueue.Dispatch()
+ 2016-11-20 00:09:29,956 [P7740/D10/T39] INFO  Umbraco.Core.CoreBootManager - Umbraco 7.5.4 application starting on DESKTOP-RTC7CKD
+ 2016-11-20 00:09:29,997 [P7740/D10/T39] INFO  Umbraco.Core.PluginManager - Determining hash of code files on disk
+ 2016-11-20 00:09:30,017 [P7740/D10/T39] INFO  Umbraco.Core.PluginManager - Hash determined (took 20ms)
+ 2016-11-20 00:09:30,136 [P7740/D10/T39] INFO  Umbraco.Core.PluginManager - Starting resolution types of umbraco.interfaces.IApplicationStartupHandler
+ 2016-11-20 00:09:30,159 [P7740/D10/T39] INFO  Umbraco.Core.PluginManager - Completed resolution of types of umbraco.interfaces.IApplicationStartupHandler, found 0 (took 22ms)
+ 2016-11-20 00:09:30,200 [P7740/D10/T39] INFO  Umbraco.Core.PluginManager - Starting resolution types of Umbraco.Core.PropertyEditors.IPropertyEditorValueConverter
+ 2016-11-20 00:09:30,202 [P7740/D10/T39] INFO  Umbraco.Core.PluginManager - Completed resolution of types of Umbraco.Core.PropertyEditors.IPropertyEditorValueConverter, found 0 (took 2ms)
+ 2016-11-20 00:09:30,204 [P7740/D10/T39] INFO  Umbraco.Core.PluginManager - Starting resolution types of Umbraco.Core.PropertyEditors.IPropertyValueConverter
+ 2016-11-20 00:09:30,207 [P7740/D10/T39] INFO  Umbraco.Core.PluginManager - Completed resolution of types of Umbraco.Core.PropertyEditors.IPropertyValueConverter, found 0 (took 3ms)
+ 2016-11-20 00:09:30,232 [P7740/D10/T39] INFO  Umbraco.Core.PluginManager - Starting resolution types of Umbraco.Web.Mvc.SurfaceController
+ 2016-11-20 00:09:30,234 [P7740/D10/T39] INFO  Umbraco.Core.PluginManager - Completed resolution of types of Umbraco.Web.Mvc.SurfaceController, found 0 (took 1ms)
+ 2016-11-20 00:09:30,235 [P7740/D10/T39] INFO  Umbraco.Core.PluginManager - Starting resolution types of Umbraco.Web.WebApi.UmbracoApiController
+ 2016-11-20 00:09:30,248 [P7740/D10/T39] INFO  Umbraco.Core.PluginManager - Completed resolution of types of Umbraco.Web.WebApi.UmbracoApiController, found 0 (took 12ms)
+ 2016-11-20 00:09:30,308 [P7740/D10/T39] INFO  Umbraco.Core.PluginManager - Starting resolution types of Umbraco.Core.Media.IThumbnailProvider
+ 2016-11-20 00:09:30,310 [P7740/D10/T39] INFO  Umbraco.Core.PluginManager - Completed resolution of types of Umbraco.Core.Media.IThumbnailProvider, found 0 (took 1ms)
+ 2016-11-20 00:09:30,311 [P7740/D10/T39] INFO  Umbraco.Core.PluginManager - Starting resolution types of Umbraco.Core.Media.IImageUrlProvider
+ 2016-11-20 00:09:30,313 [P7740/D10/T39] INFO  Umbraco.Core.PluginManager - Completed resolution of types of Umbraco.Core.Media.IImageUrlProvider, found 0 (took 1ms)
+ 2016-11-20 00:09:32,180 [P7740/D10/T39] INFO  Umbraco.Core.DatabaseContext - CanConnect = True
+ 2016-11-20 00:09:32,546 [P7740/D10/T39] INFO  Umbraco.Core.DatabaseContext - CanConnect = True
+ 2016-11-20 00:09:32,565 [P7740/D10/T39] INFO  Umbraco.Core.DatabaseContext - CanConnect = True
+ 2016-11-20 00:09:32,610 [P7740/D10/T39] INFO  Umbraco.Web.Cache.CacheRefresherEventHandler - Initializing Umbraco internal event handlers for cache refreshing
+ 2016-11-20 00:09:32,767 [P7740/D10/T39] INFO  Umbraco.Web.Search.ExamineEvents - Initializing Examine and binding to business logic events
+ 2016-11-20 00:09:32,768 [P7740/D10/T39] INFO  Umbraco.Web.Search.ExamineEvents - Adding examine event handlers for index providers: 3
+ 2016-11-20 00:09:32,786 [P7740/D10/T39] INFO  Umbraco.Core.CoreBootManager - Umbraco application startup complete (took 2989ms)
+ 2016-11-20 00:09:33,180 [P7740/D10/T86] INFO  Umbraco.Core.Sync.ApplicationUrlHelper - ApplicationUrl: http://ucommerce.dev:80/umbraco (UmbracoModule request)
+ 2016-11-20 00:10:03,247 [P7740/D10/T76] INFO  Umbraco.Web.Scheduling.BackgroundTaskRunner - [LogScrubber] Terminating (immediate)
+ 2016-11-20 00:10:03,247 [P7740/D10/T76] INFO  Umbraco.Web.Scheduling.BackgroundTaskRunner - [LogScrubber] Cancelling tasks
+ 2016-11-20 00:10:03,251 [P7740/D10/T76] INFO  Umbraco.Web.Scheduling.BackgroundTaskRunner - [LogScrubber] Tasks cancelled, terminated
+ 2016-11-20 00:10:03,257 [P7740/D10/T76] INFO  Umbraco.Web.Scheduling.BackgroundTaskRunner - [Umbraco.Web.Scheduling.IBackgroundTask] Terminating (immediate)
+ 2016-11-20 00:10:03,257 [P7740/D10/T76] INFO  Umbraco.Web.Scheduling.BackgroundTaskRunner - [Umbraco.Web.Scheduling.IBackgroundTask] Cancelling tasks
+ 2016-11-20 00:10:03,257 [P7740/D10/T76] INFO  Umbraco.Web.Scheduling.BackgroundTaskRunner - [Umbraco.Web.Scheduling.IBackgroundTask] Tasks cancelled, terminated
+ 2016-11-20 00:10:03,257 [P7740/D10/T76] INFO  Umbraco.Web.Scheduling.BackgroundTaskRunner - [KeepAlive] Terminating (immediate)
+ 2016-11-20 00:10:03,257 [P7740/D10/T76] INFO  Umbraco.Web.Scheduling.BackgroundTaskRunner - [KeepAlive] Cancelling tasks
+ 2016-11-20 00:10:03,257 [P7740/D10/T76] INFO  Umbraco.Web.Scheduling.BackgroundTaskRunner - [KeepAlive] Tasks cancelled, terminated
+ 2016-11-20 00:10:03,264 [P7740/D10/T76] INFO  Umbraco.Web.Scheduling.BackgroundTaskRunner - [ScheduledPublishing] Terminating (immediate)
+ 2016-11-20 00:10:03,264 [P7740/D10/T76] INFO  Umbraco.Web.Scheduling.BackgroundTaskRunner - [ScheduledPublishing] Cancelling tasks
+ 2016-11-20 00:10:03,264 [P7740/D10/T76] INFO  Umbraco.Web.Scheduling.BackgroundTaskRunner - [ScheduledPublishing] Tasks cancelled, terminated
+ 2016-11-20 00:10:03,264 [P7740/D10/T76] INFO  Umbraco.Web.Scheduling.BackgroundTaskRunner - [ScheduledTasks] Terminating (immediate)
+ 2016-11-20 00:10:03,264 [P7740/D10/T76] INFO  Umbraco.Web.Scheduling.BackgroundTaskRunner - [ScheduledTasks] Cancelling tasks
+ 2016-11-20 00:10:03,264 [P7740/D10/T76] INFO  Umbraco.Web.Scheduling.BackgroundTaskRunner - [ScheduledTasks] Tasks cancelled, terminated
+ 2016-11-20 00:10:03,278 [P7740/D10/T25] INFO  Umbraco.Core.UmbracoApplicationBase - Application shutdown. Details: ResourcesDirChangeOrDirectoryRename
+
+_shutDownMessage=Change Notification for critical directories.
+App_GlobalResources dir change or directory rename
+HostingEnvironment initiated shutdown
+Change Notification for critical directories.
+App_GlobalResources dir change or directory rename
+Change Notification for critical directories.
+App_GlobalResources dir change or directory rename
+Change Notification for critical directories.
+App_GlobalResources dir change or directory rename
+Change Notification for critical directories.
+App_GlobalResources dir change or directory rename
+Change Notification for critical directories.
+App_GlobalResources dir change or directory rename
+Change Notification for critical directories.
+App_GlobalResources dir change or directory rename
+Change Notification for critical directories.
+App_GlobalResources dir change or directory rename
+Change Notification for critical directories.
+App_GlobalResources dir change or directory rename
+Change Notification for critical directories.
+App_GlobalResources dir change or directory rename
+Change Notification for critical directories.
+App_GlobalResources dir change or directory rename
+Change Notification for critical directories.
+App_GlobalResources dir change or directory rename
+Change Notification for critical directories.
+App_GlobalResources dir change or directory rename
+Change Notification for critical directories.
+App_GlobalResources dir change or directory rename
+Change Notification for critical directories.
+App_GlobalResources dir change or directory rename
+Change Notification for critical directories.
+App_GlobalResources dir change or directory rename
+Change Notification for critical directories.
+App_GlobalResources dir change or directory rename
+Change Notification for critical directories.
+App_GlobalResources dir change or directory rename
+Change Notification for critical directories.
+App_GlobalResources dir change or directory rename
+Change Notification for critical directories.
+App_GlobalResources dir change or directory rename
+Change Notification for critical directories.
+App_GlobalResources dir change or directory rename
+Change Notification for critical directories.
+App_GlobalResources dir change or directory rename
+Change Notification for critical directories.
+App_GlobalResources dir change or directory rename
+Change Notification for critical directories.
+App_GlobalResources dir change or directory rename
+Change Notification for critical directories.
+App_GlobalResources dir change or directory rename
+Change Notification for critical directories.
+App_GlobalResources dir change or directory rename
+Change Notification for critical directories.
+App_GlobalResources dir change or directory rename
+Change Notification for critical directories.
+App_GlobalResources dir change or directory rename
+Change Notification for critical directories.
+App_GlobalResources dir change or directory rename
+Change Notification for critical directories.
+App_GlobalResources dir change or directory rename
+Change Notification for critical directories.
+App_GlobalResources dir change or directory rename
+Change Notification for critical directories.
+bin dir change or directory rename
+Change Notification for critical directories.
+bin dir change or directory rename
+Change Notification for critical directories.
+bin dir change or directory rename
+Change Notification for critical directories.
+bin dir change or directory rename
+Change Notification for critical directories.
+bin dir change or directory rename
+Change Notification for critical directories.
+bin dir change or directory rename
+HostingEnvironment caused shutdown
+
+_shutDownStack=   at System.Environment.GetStackTrace(Exception e, Boolean needFileInfo)
+   at System.Environment.get_StackTrace()
+   at System.Web.Hosting.HostingEnvironment.InitiateShutdownInternal()
+   at System.Web.Hosting.HostingEnvironment.InitiateShutdownWithoutDemand()
+   at System.Web.HttpRuntime.ShutdownAppDomain(String stackTrace)
+   at System.Web.HttpRuntime.OnCriticalDirectoryChange(Object sender, FileChangeEvent e)
+   at System.Web.FileChangesMonitor.OnCriticaldirChange(Object sender, FileChangeEvent e)
+   at System.Web.DirectoryMonitor.FireNotifications()
+   at System.Web.Util.WorkItem.CallCallbackWithAssert(WorkItemCallback callback)
+   at System.Web.Util.WorkItem.OnQueueUserWorkItemCompletion(Object state)
+   at System.Threading.ExecutionContext.RunInternal(ExecutionContext executionContext, ContextCallback callback, Object state, Boolean preserveSyncCtx)
+   at System.Threading.ExecutionContext.Run(ExecutionContext executionContext, ContextCallback callback, Object state, Boolean preserveSyncCtx)
+   at System.Threading.QueueUserWorkItemCallback.System.Threading.IThreadPoolWorkItem.ExecuteWorkItem()
+   at System.Threading.ThreadPoolWorkQueue.Dispatch()
+ 2016-11-20 00:10:17,099 [P7740/D11/T1] INFO  Umbraco.Core.CoreBootManager - Umbraco 7.5.4 application starting on DESKTOP-RTC7CKD
+ 2016-11-20 00:10:17,138 [P7740/D11/T1] INFO  Umbraco.Core.PluginManager - Determining hash of code files on disk
+ 2016-11-20 00:10:17,156 [P7740/D11/T1] INFO  Umbraco.Core.PluginManager - Hash determined (took 17ms)
+ 2016-11-20 00:10:17,301 [P7740/D11/T1] INFO  Umbraco.Core.PluginManager - Starting resolution types of umbraco.interfaces.IApplicationStartupHandler
+ 2016-11-20 00:10:17,932 [P7740/D11/T1] INFO  Umbraco.Core.PluginManager - Completed resolution of types of umbraco.interfaces.IApplicationStartupHandler, found 0 (took 631ms)
+ 2016-11-20 00:10:17,960 [P7740/D11/T1] INFO  Umbraco.Core.PluginManager - Starting resolution types of Umbraco.Core.PropertyEditors.IPropertyEditorValueConverter
+ 2016-11-20 00:10:17,968 [P7740/D11/T1] INFO  Umbraco.Core.PluginManager - Completed resolution of types of Umbraco.Core.PropertyEditors.IPropertyEditorValueConverter, found 0 (took 8ms)
+ 2016-11-20 00:10:17,975 [P7740/D11/T1] INFO  Umbraco.Core.PluginManager - Starting resolution types of Umbraco.Core.PropertyEditors.IPropertyValueConverter
+ 2016-11-20 00:10:18,000 [P7740/D11/T1] INFO  Umbraco.Core.PluginManager - Completed resolution of types of Umbraco.Core.PropertyEditors.IPropertyValueConverter, found 0 (took 25ms)
+ 2016-11-20 00:10:18,030 [P7740/D11/T1] INFO  Umbraco.Core.PluginManager - Starting resolution types of Umbraco.Web.Mvc.SurfaceController
+ 2016-11-20 00:10:18,050 [P7740/D11/T1] INFO  Umbraco.Core.PluginManager - Completed resolution of types of Umbraco.Web.Mvc.SurfaceController, found 0 (took 19ms)
+ 2016-11-20 00:10:18,051 [P7740/D11/T1] INFO  Umbraco.Core.PluginManager - Starting resolution types of Umbraco.Web.WebApi.UmbracoApiController
+ 2016-11-20 00:10:18,069 [P7740/D11/T1] INFO  Umbraco.Core.PluginManager - Completed resolution of types of Umbraco.Web.WebApi.UmbracoApiController, found 0 (took 17ms)
+ 2016-11-20 00:10:18,142 [P7740/D11/T1] INFO  Umbraco.Core.PluginManager - Starting resolution types of Umbraco.Core.Media.IThumbnailProvider
+ 2016-11-20 00:10:18,157 [P7740/D11/T1] INFO  Umbraco.Core.PluginManager - Completed resolution of types of Umbraco.Core.Media.IThumbnailProvider, found 0 (took 14ms)
+ 2016-11-20 00:10:18,157 [P7740/D11/T1] INFO  Umbraco.Core.PluginManager - Starting resolution types of Umbraco.Core.Media.IImageUrlProvider
+ 2016-11-20 00:10:18,168 [P7740/D11/T1] INFO  Umbraco.Core.PluginManager - Completed resolution of types of Umbraco.Core.Media.IImageUrlProvider, found 0 (took 11ms)
+ 2016-11-20 00:10:20,209 [P7740/D11/T1] INFO  Umbraco.Core.DatabaseContext - CanConnect = True
+ 2016-11-20 00:10:20,563 [P7740/D11/T1] INFO  Umbraco.Core.DatabaseContext - CanConnect = True
+ 2016-11-20 00:10:20,573 [P7740/D11/T1] INFO  Umbraco.Core.DatabaseContext - CanConnect = True
+ 2016-11-20 00:10:20,597 [P7740/D11/T1] INFO  Umbraco.Web.Cache.CacheRefresherEventHandler - Initializing Umbraco internal event handlers for cache refreshing
+ 2016-11-20 00:10:20,700 [P7740/D11/T1] INFO  Umbraco.Web.Search.ExamineEvents - Initializing Examine and binding to business logic events
+ 2016-11-20 00:10:20,701 [P7740/D11/T1] INFO  Umbraco.Web.Search.ExamineEvents - Adding examine event handlers for index providers: 3
+ 2016-11-20 00:10:20,714 [P7740/D11/T1] INFO  Umbraco.Core.CoreBootManager - Umbraco application startup complete (took 3748ms)
+ 2016-11-20 00:10:20,905 [P7740/D11/T55] INFO  Umbraco.Core.Sync.ApplicationUrlHelper - ApplicationUrl: http://ucommerce.dev:80/umbraco (UmbracoModule request)
+ 2016-11-20 00:10:24,021 [P7740/D11/T86] INFO  umbraco.content - Load Xml from file...
+ 2016-11-20 00:10:24,023 [P7740/D11/T86] INFO  umbraco.content - Loaded Xml from file.
+ 2016-11-20 00:10:24,836 [P7740/D11/T86] INFO  Umbraco.Core.PluginManager - Starting resolution types of Umbraco.Core.PropertyEditors.IParameterEditor
+ 2016-11-20 00:10:24,932 [P7740/D11/T86] INFO  Umbraco.Core.PluginManager - Completed resolution of types of Umbraco.Core.PropertyEditors.IParameterEditor, found 0 (took 96ms)
+ 2016-11-20 00:10:27,419 [P7740/D11/T86] ERROR Umbraco.Core.UmbracoApplicationBase - An unhandled exception occurred
+System.InvalidOperationException: The view '/Views/Home.cshtml' or its master was not found or no view engine supports the searched locations. The following locations were searched:
+/Views/Home.cshtml
+   at System.Web.Mvc.ViewResult.FindView(ControllerContext context)
+   at System.Web.Mvc.ViewResultBase.ExecuteResult(ControllerContext context)
+   at System.Web.Mvc.ControllerActionInvoker.InvokeActionResultFilterRecursive(IList`1 filters, Int32 filterIndex, ResultExecutingContext preContext, ControllerContext controllerContext, ActionResult actionResult)
+   at System.Web.Mvc.ControllerActionInvoker.InvokeActionResultFilterRecursive(IList`1 filters, Int32 filterIndex, ResultExecutingContext preContext, ControllerContext controllerContext, ActionResult actionResult)
+   at System.Web.Mvc.ControllerActionInvoker.InvokeActionResultFilterRecursive(IList`1 filters, Int32 filterIndex, ResultExecutingContext preContext, ControllerContext controllerContext, ActionResult actionResult)
+   at System.Web.Mvc.ControllerActionInvoker.InvokeActionResultFilterRecursive(IList`1 filters, Int32 filterIndex, ResultExecutingContext preContext, ControllerContext controllerContext, ActionResult actionResult)
+   at System.Web.Mvc.ControllerActionInvoker.InvokeActionResultWithFilters(ControllerContext controllerContext, IList`1 filters, ActionResult actionResult)
+   at System.Web.Mvc.Async.AsyncControllerActionInvoker.<>c__DisplayClass21.<BeginInvokeAction>b__1e(IAsyncResult asyncResult)
+   at System.Web.Mvc.Async.AsyncControllerActionInvoker.EndInvokeAction(IAsyncResult asyncResult)
+   at System.Web.Mvc.Controller.<BeginExecuteCore>b__1d(IAsyncResult asyncResult, ExecuteCoreState innerState)
+   at System.Web.Mvc.Async.AsyncResultWrapper.WrappedAsyncVoid`1.CallEndDelegate(IAsyncResult asyncResult)
+   at System.Web.Mvc.Controller.EndExecuteCore(IAsyncResult asyncResult)
+   at System.Web.Mvc.Async.AsyncResultWrapper.WrappedAsyncVoid`1.CallEndDelegate(IAsyncResult asyncResult)
+   at System.Web.Mvc.Controller.EndExecute(IAsyncResult asyncResult)
+   at System.Web.Mvc.MvcHandler.<BeginProcessRequest>b__5(IAsyncResult asyncResult, ProcessRequestState innerState)
+   at System.Web.Mvc.Async.AsyncResultWrapper.WrappedAsyncVoid`1.CallEndDelegate(IAsyncResult asyncResult)
+   at System.Web.Mvc.MvcHandler.EndProcessRequest(IAsyncResult asyncResult)
+   at System.Web.HttpApplication.CallHandlerExecutionStep.System.Web.HttpApplication.IExecutionStep.Execute()
+   at System.Web.HttpApplication.ExecuteStep(IExecutionStep step, Boolean& completedSynchronously)
+ 2016-11-20 00:10:30,715 [P7740/D11/T62] INFO  Umbraco.Core.PluginManager - Starting resolution types of Umbraco.Web.Trees.TreeController
+ 2016-11-20 00:10:30,730 [P7740/D11/T62] INFO  Umbraco.Core.PluginManager - Completed resolution of types of Umbraco.Web.Trees.TreeController, found 0 (took 15ms)
+ 2016-11-20 00:10:30,769 [P7740/D11/T55] INFO  Umbraco.Core.PluginManager - Starting resolution types of umbraco.interfaces.ITree
+ 2016-11-20 00:10:30,786 [P7740/D11/T55] INFO  Umbraco.Core.PluginManager - Completed resolution of types of umbraco.interfaces.ITree, found 0 (took 17ms)
+ 2016-11-20 00:10:30,818 [P7740/D11/T55] INFO  Umbraco.Core.PluginManager - Starting resolution types of Umbraco.Web.Trees.TreeController
+ 2016-11-20 00:10:30,818 [P7740/D11/T55] INFO  Umbraco.Core.PluginManager - Completed resolution of types of Umbraco.Web.Trees.TreeController, found 0 (took 0ms)
+ 2016-11-20 00:10:30,824 [P7740/D11/T55] INFO  Umbraco.Core.PluginManager - Starting resolution types of umbraco.interfaces.ITree
+ 2016-11-20 00:10:30,845 [P7740/D11/T55] INFO  Umbraco.Core.PluginManager - Completed resolution of types of umbraco.interfaces.ITree, found 0 (took 20ms)
+ 2016-11-20 00:10:30,880 [P7740/D11/T55] INFO  Umbraco.Core.PluginManager - Starting resolution types of umbraco.interfaces.IApplication
+ 2016-11-20 00:10:30,911 [P7740/D11/T55] INFO  Umbraco.Core.PluginManager - Completed resolution of types of umbraco.interfaces.IApplication, found 0 (took 31ms)

@@ -3071,6 +3071,156 @@
     </Content>
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="App_GlobalResources\Admin.da.designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Admin.da.resx</DependentUpon>
+    </Compile>
+    <Compile Include="App_GlobalResources\Admin.de.designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Admin.de.resx</DependentUpon>
+    </Compile>
+    <Compile Include="App_GlobalResources\Admin.designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Admin.resx</DependentUpon>
+    </Compile>
+    <Compile Include="App_GlobalResources\Admin.sv.designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Admin.sv.resx</DependentUpon>
+    </Compile>
+    <Compile Include="App_GlobalResources\CatalogSearch.da.designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>CatalogSearch.da.resx</DependentUpon>
+    </Compile>
+    <Compile Include="App_GlobalResources\CatalogSearch.de.designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>CatalogSearch.de.resx</DependentUpon>
+    </Compile>
+    <Compile Include="App_GlobalResources\CatalogSearch.designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>CatalogSearch.resx</DependentUpon>
+    </Compile>
+    <Compile Include="App_GlobalResources\CatalogSearch.sv.designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>CatalogSearch.sv.resx</DependentUpon>
+    </Compile>
+    <Compile Include="App_GlobalResources\Definition.da.designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Definition.da.resx</DependentUpon>
+    </Compile>
+    <Compile Include="App_GlobalResources\Definition.de.designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Definition.de.resx</DependentUpon>
+    </Compile>
+    <Compile Include="App_GlobalResources\Definition.designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Definition.resx</DependentUpon>
+    </Compile>
+    <Compile Include="App_GlobalResources\Definition.sv.designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Definition.sv.resx</DependentUpon>
+    </Compile>
+    <Compile Include="App_GlobalResources\OrderList.da.designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>OrderList.da.resx</DependentUpon>
+    </Compile>
+    <Compile Include="App_GlobalResources\OrderList.de.designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>OrderList.de.resx</DependentUpon>
+    </Compile>
+    <Compile Include="App_GlobalResources\OrderList.designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>OrderList.resx</DependentUpon>
+    </Compile>
+    <Compile Include="App_GlobalResources\OrderList.sv.designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>OrderList.sv.resx</DependentUpon>
+    </Compile>
+    <Compile Include="App_GlobalResources\OrdersCount.da.designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>OrdersCount.da.resx</DependentUpon>
+    </Compile>
+    <Compile Include="App_GlobalResources\OrdersCount.de.designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>OrdersCount.de.resx</DependentUpon>
+    </Compile>
+    <Compile Include="App_GlobalResources\OrdersCount.designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>OrdersCount.resx</DependentUpon>
+    </Compile>
+    <Compile Include="App_GlobalResources\OrdersCount.sv.designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>OrdersCount.sv.resx</DependentUpon>
+    </Compile>
+    <Compile Include="App_GlobalResources\RoleName.da.designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>RoleName.da.resx</DependentUpon>
+    </Compile>
+    <Compile Include="App_GlobalResources\RoleName.designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>RoleName.resx</DependentUpon>
+    </Compile>
+    <Compile Include="App_GlobalResources\Search.da.designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Search.da.resx</DependentUpon>
+    </Compile>
+    <Compile Include="App_GlobalResources\Search.de.designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Search.de.resx</DependentUpon>
+    </Compile>
+    <Compile Include="App_GlobalResources\Search.designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Search.resx</DependentUpon>
+    </Compile>
+    <Compile Include="App_GlobalResources\Search.sv.designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Search.sv.resx</DependentUpon>
+    </Compile>
+    <Compile Include="App_GlobalResources\Tabs.da.designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Tabs.da.resx</DependentUpon>
+    </Compile>
+    <Compile Include="App_GlobalResources\Tabs.de.designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Tabs.de.resx</DependentUpon>
+    </Compile>
+    <Compile Include="App_GlobalResources\Tabs.designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Tabs.resx</DependentUpon>
+    </Compile>
+    <Compile Include="App_GlobalResources\Tabs.sv.designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Tabs.sv.resx</DependentUpon>
+    </Compile>
     <Compile Include="App_Start\RouteConfig.cs" />
     <Compile Include="Controllers\FeatureItemController.cs" />
     <Compile Include="Controllers\HomeController.cs" />
@@ -3286,6 +3436,128 @@
   <ItemGroup>
     <Analyzer Include="..\packages\Microsoft.CodeAnalysis.Analyzers.1.0.0\analyzers\dotnet\cs\Microsoft.CodeAnalysis.Analyzers.dll" />
     <Analyzer Include="..\packages\Microsoft.CodeAnalysis.Analyzers.1.0.0\analyzers\dotnet\cs\Microsoft.CodeAnalysis.CSharp.Analyzers.dll" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="App_GlobalResources\Admin.da.resx">
+      <Generator>GlobalResourceProxyGenerator</Generator>
+      <LastGenOutput>Admin.da.designer.cs</LastGenOutput>
+    </Content>
+    <Content Include="App_GlobalResources\Admin.de.resx">
+      <Generator>GlobalResourceProxyGenerator</Generator>
+      <LastGenOutput>Admin.de.designer.cs</LastGenOutput>
+    </Content>
+    <Content Include="App_GlobalResources\Admin.resx">
+      <Generator>GlobalResourceProxyGenerator</Generator>
+      <LastGenOutput>Admin.designer.cs</LastGenOutput>
+    </Content>
+    <Content Include="App_GlobalResources\Admin.sv.resx">
+      <Generator>GlobalResourceProxyGenerator</Generator>
+      <LastGenOutput>Admin.sv.designer.cs</LastGenOutput>
+    </Content>
+    <Content Include="App_GlobalResources\CatalogSearch.da.resx">
+      <Generator>GlobalResourceProxyGenerator</Generator>
+      <LastGenOutput>CatalogSearch.da.designer.cs</LastGenOutput>
+    </Content>
+    <Content Include="App_GlobalResources\CatalogSearch.de.resx">
+      <Generator>GlobalResourceProxyGenerator</Generator>
+      <LastGenOutput>CatalogSearch.de.designer.cs</LastGenOutput>
+    </Content>
+    <Content Include="App_GlobalResources\CatalogSearch.resx">
+      <Generator>GlobalResourceProxyGenerator</Generator>
+      <LastGenOutput>CatalogSearch.designer.cs</LastGenOutput>
+    </Content>
+    <Content Include="App_GlobalResources\CatalogSearch.sv.resx">
+      <Generator>GlobalResourceProxyGenerator</Generator>
+      <LastGenOutput>CatalogSearch.sv.designer.cs</LastGenOutput>
+    </Content>
+    <Content Include="App_GlobalResources\Definition.da.resx">
+      <Generator>GlobalResourceProxyGenerator</Generator>
+      <LastGenOutput>Definition.da.designer.cs</LastGenOutput>
+    </Content>
+    <Content Include="App_GlobalResources\Definition.de.resx">
+      <Generator>GlobalResourceProxyGenerator</Generator>
+      <LastGenOutput>Definition.de.designer.cs</LastGenOutput>
+    </Content>
+    <Content Include="App_GlobalResources\Definition.resx">
+      <Generator>GlobalResourceProxyGenerator</Generator>
+      <LastGenOutput>Definition.designer.cs</LastGenOutput>
+    </Content>
+    <Content Include="App_GlobalResources\Definition.sv.resx">
+      <Generator>GlobalResourceProxyGenerator</Generator>
+      <LastGenOutput>Definition.sv.designer.cs</LastGenOutput>
+    </Content>
+    <Content Include="App_GlobalResources\OrderList.da.resx">
+      <Generator>GlobalResourceProxyGenerator</Generator>
+      <LastGenOutput>OrderList.da.designer.cs</LastGenOutput>
+    </Content>
+    <Content Include="App_GlobalResources\OrderList.de.resx">
+      <Generator>GlobalResourceProxyGenerator</Generator>
+      <LastGenOutput>OrderList.de.designer.cs</LastGenOutput>
+    </Content>
+    <Content Include="App_GlobalResources\OrderList.resx">
+      <Generator>GlobalResourceProxyGenerator</Generator>
+      <LastGenOutput>OrderList.designer.cs</LastGenOutput>
+    </Content>
+    <Content Include="App_GlobalResources\OrderList.sv.resx">
+      <Generator>GlobalResourceProxyGenerator</Generator>
+      <LastGenOutput>OrderList.sv.designer.cs</LastGenOutput>
+    </Content>
+    <Content Include="App_GlobalResources\OrdersCount.da.resx">
+      <Generator>GlobalResourceProxyGenerator</Generator>
+      <LastGenOutput>OrdersCount.da.designer.cs</LastGenOutput>
+    </Content>
+    <Content Include="App_GlobalResources\OrdersCount.de.resx">
+      <Generator>GlobalResourceProxyGenerator</Generator>
+      <LastGenOutput>OrdersCount.de.designer.cs</LastGenOutput>
+    </Content>
+    <Content Include="App_GlobalResources\OrdersCount.resx">
+      <Generator>GlobalResourceProxyGenerator</Generator>
+      <LastGenOutput>OrdersCount.designer.cs</LastGenOutput>
+    </Content>
+    <Content Include="App_GlobalResources\OrdersCount.sv.resx">
+      <Generator>GlobalResourceProxyGenerator</Generator>
+      <LastGenOutput>OrdersCount.sv.designer.cs</LastGenOutput>
+    </Content>
+    <Content Include="App_GlobalResources\RoleName.da.resx">
+      <Generator>GlobalResourceProxyGenerator</Generator>
+      <LastGenOutput>RoleName.da.designer.cs</LastGenOutput>
+    </Content>
+    <Content Include="App_GlobalResources\RoleName.resx">
+      <Generator>GlobalResourceProxyGenerator</Generator>
+      <LastGenOutput>RoleName.designer.cs</LastGenOutput>
+    </Content>
+    <Content Include="App_GlobalResources\Search.da.resx">
+      <Generator>GlobalResourceProxyGenerator</Generator>
+      <LastGenOutput>Search.da.designer.cs</LastGenOutput>
+    </Content>
+    <Content Include="App_GlobalResources\Search.de.resx">
+      <Generator>GlobalResourceProxyGenerator</Generator>
+      <LastGenOutput>Search.de.designer.cs</LastGenOutput>
+    </Content>
+    <Content Include="App_GlobalResources\Search.resx">
+      <Generator>GlobalResourceProxyGenerator</Generator>
+      <LastGenOutput>Search.designer.cs</LastGenOutput>
+    </Content>
+    <Content Include="App_GlobalResources\Search.sv.resx">
+      <Generator>GlobalResourceProxyGenerator</Generator>
+      <LastGenOutput>Search.sv.designer.cs</LastGenOutput>
+    </Content>
+    <Content Include="App_GlobalResources\Tabs.da.resx">
+      <Generator>GlobalResourceProxyGenerator</Generator>
+      <LastGenOutput>Tabs.da.designer.cs</LastGenOutput>
+    </Content>
+    <Content Include="App_GlobalResources\Tabs.de.resx">
+      <Generator>GlobalResourceProxyGenerator</Generator>
+      <LastGenOutput>Tabs.de.designer.cs</LastGenOutput>
+    </Content>
+    <Content Include="App_GlobalResources\Tabs.resx">
+      <Generator>GlobalResourceProxyGenerator</Generator>
+      <LastGenOutput>Tabs.designer.cs</LastGenOutput>
+    </Content>
+    <Content Include="App_GlobalResources\Tabs.sv.resx">
+      <Generator>GlobalResourceProxyGenerator</Generator>
+      <LastGenOutput>Tabs.sv.designer.cs</LastGenOutput>
+    </Content>
   </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
