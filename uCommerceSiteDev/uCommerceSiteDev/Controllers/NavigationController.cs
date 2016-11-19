@@ -8,7 +8,7 @@ using UCommerce.Extensions;
 using Umbraco.Web.Mvc;
 namespace uCommerceSiteDev.Controllers
 {
-    public class NavigationController : Controller
+    public class NavigationController : SurfaceController
     {
         public ActionResult Index()
         {
