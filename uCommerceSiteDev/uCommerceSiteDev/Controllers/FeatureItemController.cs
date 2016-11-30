@@ -7,6 +7,7 @@ using uCommerceSiteDev.Models;
 using UCommerce.Api;
 using UCommerce.Content;
 using UCommerce.EntitiesV2;
+using UCommerce.Extensions;
 using UCommerce.Infrastructure;
 using UCommerce.Runtime;
 using Umbraco.Web.Mvc;
@@ -18,17 +19,22 @@ namespace uCommerceSiteDev.Controllers
         // GET: FeatureItem
         public ActionResult Index()
         {
-            IEnumerable<Product> products = SiteContext.Current.CatalogContext.CurrentCatalog.Categories.SelectMany<Category, Product>((Category c) =>
-                from p in c.Products
-                where p.ProductProperties.Any<ProductProperty>((ProductProperty pp) =>
-                {
-                    if (pp.ProductDefinitionField.Name != "ShowOnHomepage")
-                    {
-                        return false;
-                    }
-                    return Convert.ToBoolean(pp.Value);
-                })
-                select p);
+            //IEnumerable<Product> products = SiteContext.Current.CatalogContext.CurrentCatalog.Categories.SelectMany<Category, Product>((Category c) =>
+            //    from p in c.Products
+            //    where p.ProductProperties.Any<ProductProperty>((ProductProperty pp) =>
+            //    {
+            //        if (pp.ProductDefinitionField.Name != "ShowOnHomepage")
+            //        {
+            //            return false;
+            //        }
+            //        return Convert.ToBoolean(pp.Value);
+            //    })
+            //    select p);
+
+            IEnumerable<Product> products =
+                SiteContext.Current.CatalogContext.CurrentCatalog.Categories.SelectMany<Category, Product>(
+                    (Category c) =>
+                        from p in c.Products select p).Distinct();
             ProductsViewModel productsViewModel = new ProductsViewModel();
             foreach (Product product in products)
             {
@@ -40,8 +46,15 @@ namespace uCommerceSiteDev.Controllers
                     Sku = product.Sku,
                     IsVariant = product.IsVariant,
                     VariantSku = product.VariantSku,
-                    ThumbnailImageUrl = ObjectFactory.Instance.Resolve<IImageService>().GetImage(product.ThumbnailImageMediaId).Url
+                    ThumbnailImageUrl = uCommerceSiteDev.Common.Helper.PrimaryImageMediaIdToUrl(product.ThumbnailImageMediaId)
                 });
+
+                //var images = product.GetPropertyValue<string>("images");
+                //foreach (var image in product.GetPropertyValue<string>("images"))
+                //{
+                //    var test = image;
+                //}
+
             }
             return View("/Views/FeatureItem.cshtml", productsViewModel);
         }

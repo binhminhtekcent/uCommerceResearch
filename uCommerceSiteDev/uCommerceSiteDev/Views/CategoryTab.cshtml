@@ -1,0 +1,41 @@
+﻿@model uCommerceSiteDev.Models.CategoryNavigationViewModel
+@{
+    Layout = null;
+}
+
+<div class="col-sm-12">
+    <ul class="nav nav-tabs">
+        @foreach (var item in Model.Categories)
+        {
+            <li class="@(item == Model.Categories[0]?"active":"")"><a href="#@item.Name.ToLower()" data-toggle="tab">@item.Name</a></li>
+        }
+
+    </ul>
+</div>
+<div class="tab-content">
+    @foreach (var categoryTab in Model.Categories)
+    {
+        <div class="tab-pane fade @(categoryTab == Model.Categories[0]? "active in":"") " id="@categoryTab.Name.ToLower()">
+            @foreach (var product in categoryTab.Products)
+            {
+                var productPrice = "";
+                if (product.PriceCalculation.ListPrice != null)
+                {
+                    productPrice = product.PriceCalculation.YourPrice.Amount.ToString();
+                }
+                <div class="col-sm-3">
+                    <div class="product-image-wrapper">
+                        <div class="single-products">
+                            <div class="productinfo text-center">
+                                <img src="@product.ThumbnailImageUrl" alt="" height="161" width="184" />
+                                <h2>@productPrice</h2>
+                                <p>@product.Name</p>
+                                <a href="#" class="btn btn-default add-to-cart"><i class="fa fa-shopping-cart"></i>View Details</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            }
+        </div>
+    }
+</div>
