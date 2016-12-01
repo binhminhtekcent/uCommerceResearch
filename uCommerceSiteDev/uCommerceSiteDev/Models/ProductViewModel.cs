@@ -88,11 +88,18 @@ namespace uCommerceSiteDev.Models
 			set;
 		}
 
-		public ProductViewModel() : base(UmbracoContext.Current.PublishedContentRequest.PublishedContent)
+        public List<string> Images
+        {
+            set;
+            get;
+        }
+
+        public ProductViewModel() : base(UmbracoContext.Current.PublishedContentRequest.PublishedContent)
 		{
 			this.Variants = new List<ProductViewModel>();
 			this.Properties = new List<ProductPropertiesViewModel>();
 			this.Reviews = new List<ProductReviewViewModel>();
+            this.Images = new List<string>();
 		}
 	}
 }

@@ -9,7 +9,7 @@ using Umbraco.Core;
 
 namespace uCommerceSiteDev.Common
 {
-    public class Helper
+    public class UnitHelper
     {
         public static string PrimaryImageMediaIdToUrl(string primaryImageMediaId)
         {

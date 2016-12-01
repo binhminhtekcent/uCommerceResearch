@@ -14,21 +14,30 @@
 
             <!-- Wrapper for slides -->
             <div class="carousel-inner">
-                <div class="item">
-                    <a href=""><img src="~/images/product-details/similar1.jpg" alt=""></a>
-                    <a href=""><img src="~/images/product-details/similar2.jpg" alt=""></a>
-                    <a href=""><img src="~/images/product-details/similar3.jpg" alt=""></a>
-                </div>
-                <div class="item">
-                    <a href=""><img src="~/images/product-details/similar1.jpg" alt=""></a>
-                    <a href=""><img src="~/images/product-details/similar2.jpg" alt=""></a>
-                    <a href=""><img src="~/images/product-details/similar3.jpg" alt=""></a>
-                </div>
-                <div class="item active">
-                    <a href=""><img src="~/images/product-details/similar1.jpg" alt=""></a>
-                    <a href=""><img src="~/images/product-details/similar2.jpg" alt=""></a>
-                    <a href=""><img src="~/images/product-details/similar3.jpg" alt=""></a>
-                </div>
+                @if (Model.Images.Any())
+                {
+                    foreach (var image in Model.Images)
+                    {
+                        <div class="item @(image == Model.Images[0]? "active": string.Empty)">
+                            <a href=""><img src="@image" height="85" width="84" alt=""></a>
+                        </div>
+                    }
+                }
+                @*<div class="item">
+                        <a href=""><img src="~/images/product-details/similar1.jpg" alt=""></a>
+                        <a href=""><img src="~/images/product-details/similar2.jpg" alt=""></a>
+                        <a href=""><img src="~/images/product-details/similar3.jpg" alt=""></a>
+                    </div>
+                    <div class="item">
+                        <a href=""><img src="~/images/product-details/similar1.jpg" alt=""></a>
+                        <a href=""><img src="~/images/product-details/similar2.jpg" alt=""></a>
+                        <a href=""><img src="~/images/product-details/similar3.jpg" alt=""></a>
+                    </div>
+                    <div class="item active">
+                        <a href=""><img src="~/images/product-details/similar1.jpg" alt=""></a>
+                        <a href=""><img src="~/images/product-details/similar2.jpg" alt=""></a>
+                        <a href=""><img src="~/images/product-details/similar3.jpg" alt=""></a>
+                    </div>*@
 
             </div>
 

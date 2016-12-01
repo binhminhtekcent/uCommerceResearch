@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Web;
 using System.Web.Mvc;
+using uCommerceSiteDev.Common;
 using uCommerceSiteDev.Models;
 using umbraco.presentation.umbraco;
 using umbraco.providers.members;
@@ -41,8 +42,17 @@ namespace uCommerceSiteDev.Controllers
                 TaxCalculation = CatalogLibrary.CalculatePrice(currentProduct, null).YourTax.ToString()
             };
 
+            var images = currentProduct.GetPropertyValue<string>("Images");
+            if (!string.IsNullOrEmpty(images))
+            {
+                foreach (var image in currentProduct.GetPropertyValue<string>("Images").Split(','))
+                {
+                    productsViewModel.Images.Add(UnitHelper.PrimaryImageMediaIdToUrl(image));
+                }
+            }
+
             productsViewModel.ThumbnailImageUrl =
-                Common.Helper.PrimaryImageMediaIdToUrl(currentProduct.PrimaryImageMediaId);
+               UnitHelper.PrimaryImageMediaIdToUrl(currentProduct.PrimaryImageMediaId);
 
             return productsViewModel;
         }

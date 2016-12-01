@@ -3222,7 +3222,7 @@
       <DependentUpon>Tabs.sv.resx</DependentUpon>
     </Compile>
     <Compile Include="App_Start\RouteConfig.cs" />
-    <Compile Include="Common\Helper.cs" />
+    <Compile Include="Common\UnitHelper.cs" />
     <Compile Include="Controllers\CategoryTabController.cs" />
     <Compile Include="Controllers\FeatureItemController.cs" />
     <Compile Include="Controllers\HomeController.cs" />

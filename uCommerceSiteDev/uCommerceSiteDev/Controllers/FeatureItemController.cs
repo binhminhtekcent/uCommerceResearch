@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Web;
 using System.Web.Mvc;
+using uCommerceSiteDev.Common;
 using uCommerceSiteDev.Models;
 using UCommerce.Api;
 using UCommerce.Content;
@@ -46,15 +47,17 @@ namespace uCommerceSiteDev.Controllers
                     Sku = product.Sku,
                     IsVariant = product.IsVariant,
                     VariantSku = product.VariantSku,
-                    ThumbnailImageUrl = uCommerceSiteDev.Common.Helper.PrimaryImageMediaIdToUrl(product.ThumbnailImageMediaId)
+                    ThumbnailImageUrl = UnitHelper.PrimaryImageMediaIdToUrl(product.ThumbnailImageMediaId)
                 });
 
-                //var images = product.GetPropertyValue<string>("images");
-                //foreach (var image in product.GetPropertyValue<string>("images"))
+                //var images = product.GetPropertyValue<string>("Images");
+                //if (!string.IsNullOrEmpty(images))
                 //{
-                //    var test = image;
+                //    foreach (var image in product.GetPropertyValue<string>("Images").Split(';'))
+                //    {
+                //        var test = image;
+                //    }
                 //}
-
             }
             return View("/Views/FeatureItem.cshtml", productsViewModel);
         }
