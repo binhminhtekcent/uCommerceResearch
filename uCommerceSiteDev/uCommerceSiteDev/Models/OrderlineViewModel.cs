@@ -71,7 +71,13 @@ namespace uCommerceSiteDev.Models
 			set;
 		}
 
-		public OrderlineViewModel()
+        public string Image
+        {
+            get;
+            set;
+        }
+
+        public OrderlineViewModel()
 		{
 		}
 	}

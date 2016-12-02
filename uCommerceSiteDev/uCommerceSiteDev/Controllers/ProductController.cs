@@ -20,11 +20,69 @@ namespace uCommerceSiteDev.Controllers
 {
     public class ProductController : RenderMvcController
     {
+
         // GET: Product
         public ActionResult Index(RenderModel model)
         {
-            var productViewModel = RenderView();
-            return View("/Views/Product.cshtml", productViewModel);
+            return RenderView(false);
+        }
+
+        [HttpPost]
+        public ActionResult Index(AddToBasketViewModel model)
+        {
+            //string variant = GetVariantFromPostData(model.Sku, "variation-");
+            //TransactionLibrary.AddToBasket(1, model.Sku, variant);
+            TransactionLibrary.AddToBasket(model.Quality, model.Sku);
+
+            return RenderView(true);
+        }
+
+        private ActionResult RenderView(bool addedToBasket)
+        {
+            Product currentProduct = SiteContext.Current.CatalogContext.CurrentProduct;
+
+            var productViewModel = new ProductViewModel();
+
+            productViewModel.Sku = currentProduct.Sku;
+            productViewModel.PriceCalculation = UCommerce.Api.CatalogLibrary.CalculatePrice(currentProduct);
+            productViewModel.Name = currentProduct.DisplayName();
+            productViewModel.LongDescription = currentProduct.LongDescription();
+            productViewModel.IsVariant = false;
+            productViewModel.IsOrderingAllowed = currentProduct.AllowOrdering;
+            productViewModel.TaxCalculation = UnitHelper.GetPrice(currentProduct).YourTax.ToString();
+
+            if (!string.IsNullOrEmpty(currentProduct.PrimaryImageMediaId))
+            {
+                productViewModel.ThumbnailImageUrl = UnitHelper.PrimaryImageMediaIdToUrl(currentProduct.PrimaryImageMediaId);
+            }
+
+            //Custom
+            var images = currentProduct.GetPropertyValue<string>("Images");
+            if (!string.IsNullOrEmpty(images))
+            {
+                foreach (var image in currentProduct.GetPropertyValue<string>("Images").Split(','))
+                {
+                    productViewModel.Images.Add(UnitHelper.PrimaryImageMediaIdToUrl(image));
+                }
+            }
+
+            productViewModel.Properties = MapProductProperties(currentProduct);
+
+            if (currentProduct.ProductDefinition.IsProductFamily())
+            {
+                productViewModel.Variants = MapVariants(currentProduct.Variants);
+            }
+
+            bool isInBasket = TransactionLibrary.GetBasket(true).PurchaseOrder.OrderLines.Any(x => x.Sku == currentProduct.Sku);
+
+            ProductPageViewModel productPageViewModel = new ProductPageViewModel()
+            {
+                ProductViewModel = productViewModel,
+                AddedToBasket = addedToBasket,
+                ItemAlreadyExists = isInBasket
+            };
+
+            return View("/Views/Product.cshtml", productPageViewModel);
         }
 
         private ProductViewModel RenderView()
@@ -57,52 +115,75 @@ namespace uCommerceSiteDev.Controllers
             return productsViewModel;
         }
 
-        private IList<ProductPropertiesViewModel> MapProductProperties(Product product)
-        {
-            List<ProductPropertiesViewModel> productPropertiesViewModels = new List<ProductPropertiesViewModel>();
-            foreach (
-                IGrouping<ProductDefinitionField, ProductProperty> productDefinitionFields in
-                    product.Variants.SelectMany<Product, ProductProperty>((Product p) => p.ProductProperties)
-                        .Where<ProductProperty>(
-                            (ProductProperty v) => v.ProductDefinitionField.DisplayOnSite)
-                        .GroupBy<ProductProperty, ProductDefinitionField>(
-                            (ProductProperty v) => v.ProductDefinitionField)
-                        .Select
-                        <IGrouping<ProductDefinitionField, ProductProperty>,
-                            IGrouping<ProductDefinitionField, ProductProperty>>(
-                                (IGrouping<ProductDefinitionField, ProductProperty> g) => g))
-            {
-                ProductPropertiesViewModel productPropertiesViewModel = new ProductPropertiesViewModel()
-                {
-                    PropertyName = productDefinitionFields.Key.Name
-                };
-                foreach (string str in (
-                    from p in productDefinitionFields
-                    select p.Value).Distinct<string>())
-                {
-                    productPropertiesViewModel.Values.Add(str);
-                }
-                productPropertiesViewModels.Add(productPropertiesViewModel);
-            }
-            return productPropertiesViewModels;
-        }
-
         private IList<ProductViewModel> MapVariants(ICollection<Product> variants)
         {
-            List<ProductViewModel> productViewModels = new List<ProductViewModel>();
-            foreach (Product variant in variants)
+            var variantModels = new List<ProductViewModel>();
+            foreach (var currentVariant in variants)
             {
-                ProductViewModel productViewModel = new ProductViewModel()
-                {
-                    Sku = variant.Sku,
-                    VariantSku = variant.VariantSku,
-                    Name = ProductExtensions.DisplayName(variant),
-                    LongDescription = ProductExtensions.LongDescription(variant),
-                    IsVariant = true
-                };
-                productViewModels.Add(productViewModel);
+                ProductViewModel productModel = new ProductViewModel();
+                productModel.Sku = currentVariant.Sku;
+                productModel.VariantSku = currentVariant.VariantSku;
+                productModel.Name = currentVariant.DisplayName();
+                productModel.LongDescription = currentVariant.LongDescription();
+                productModel.IsVariant = true;
+
+                variantModels.Add(productModel);
             }
-            return productViewModels;
+
+            return variantModels;
+        }
+
+        private IList<ProductPropertiesViewModel> MapProductProperties(Product product)
+        {
+            var productProperties = new List<ProductPropertiesViewModel>();
+
+            var uniqueVariants = from v in product.Variants.SelectMany(p => p.ProductProperties)
+                                 where v.ProductDefinitionField.DisplayOnSite
+                                 group v by v.ProductDefinitionField into g
+                                 select g;
+
+            foreach (var prop in uniqueVariants)
+            {
+                var productPropertiesViewModel = new ProductPropertiesViewModel();
+                productPropertiesViewModel.PropertyName = prop.Key.Name;
+
+                foreach (var value in prop.Select(p => p.Value).Distinct())
+                {
+                    productPropertiesViewModel.Values.Add(value);
+                }
+                productProperties.Add(productPropertiesViewModel);
+            }
+
+            return productProperties;
+        }
+
+        private string GetVariantFromPostData(string sku, string prefix)
+        {
+            var request = System.Web.HttpContext.Current.Request;
+            var keys = request.Form.AllKeys.Where(k => k.StartsWith(prefix, StringComparison.InvariantCultureIgnoreCase));
+            var properties = keys.Select(k => new { Key = k.Replace(prefix, string.Empty), Value = Request.Form[k] }).ToList();
+
+            Product product = SiteContext.Current.CatalogContext.CurrentProduct;
+            string variantSku = null;
+
+            // If there are variant values we'll need to find the selected variant
+            if (!product.IsVariant && properties.Any())
+            {
+                var variant = product.Variants.FirstOrDefault(v => v.ProductProperties
+                      .Where(pp => pp.ProductDefinitionField.DisplayOnSite
+                          && pp.ProductDefinitionField.IsVariantProperty
+                          && !pp.ProductDefinitionField.Deleted)
+                      .All(p => properties.Any(kv => kv.Key.Equals(p.ProductDefinitionField.Name, StringComparison.InvariantCultureIgnoreCase) && kv.Value.Equals(p.Value, StringComparison.InvariantCultureIgnoreCase))));
+                variantSku = variant.VariantSku;
+            }
+
+            // Only use the current product where there are no variants
+            else if (!product.Variants.Any())
+            {
+                variantSku = product.Sku;
+            }
+
+            return variantSku;
         }
     }
 }

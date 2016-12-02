@@ -1,0 +1,30 @@
+﻿@{
+    Layout = null;
+}
+@inherits Umbraco.Web.Mvc.UmbracoTemplatePage
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    @Umbraco.RenderMacro("Meta_Head")
+</head><!--/head-->
+
+<body>
+    @Umbraco.RenderMacro("Header")
+
+    @RenderBody()
+    
+    <footer id="footer">
+        <!--Footer-->
+        @Umbraco.RenderMacro("Footer")
+    </footer><!--/Footer-->
+
+
+
+    <script src="~/Scripts/jquery.js"></script>
+    <script src="~/Scripts/bootstrap.min.js"></script>
+    <script src="~/Scripts/jquery.scrollUp.min.js"></script>
+    <script src="~/Scripts/jquery.prettyPhoto.js"></script>
+    <script src="~/Scripts/main.js"></script>
+</body>
+</html>

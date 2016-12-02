@@ -1,4 +1,4 @@
-﻿@model uCommerceSiteDev.Models.ProductViewModel
+﻿@inherits Umbraco.Web.Mvc.UmbracoViewPage<uCommerceSiteDev.Models.ProductPageViewModel>
 @{
     Layout = "HomeTemplate.cshtml";
 }
@@ -7,18 +7,18 @@
     <!--product-details-->
     <div class="col-sm-5">
         <div class="view-product">
-            <img src="@Model.ThumbnailImageUrl" alt="">
+            <img src="@Model.ProductViewModel.ThumbnailImageUrl" alt="">
             <h3>ZOOM</h3>
         </div>
         <div id="similar-product" class="carousel slide" data-ride="carousel">
 
             <!-- Wrapper for slides -->
             <div class="carousel-inner">
-                @if (Model.Images.Any())
+                @if (Model.ProductViewModel.Images.Any())
                 {
-                    foreach (var image in Model.Images)
+                    foreach (var image in Model.ProductViewModel.Images)
                     {
-                        <div class="item @(image == Model.Images[0]? "active": string.Empty)">
+                        <div class="item @(image == Model.ProductViewModel.Images[0]? "active": string.Empty)">
                             <a href=""><img src="@image" height="85" width="84" alt=""></a>
                         </div>
                     }
@@ -52,26 +52,36 @@
 
     </div>
     <div class="col-sm-7">
-        <div class="product-information">
-            <!--/product-information-->
-            <img src="~/images/product-details/new.jpg" class="newarrival" alt="">
-            <h2>@Model.Name</h2>
-            <p>@Model.Sku</p>
-            <img src="~/images/product-details/rating.png" alt="">
-            <span>
-                <span>@Model.PriceCalculation.YourPrice.Amount</span>
-                <label>Quantity:</label>
-                <input type="text" value="3">
-                <button type="button" class="btn btn-fefault cart">
-                    <i class="fa fa-shopping-cart"></i>
-                    Add to cart
-                </button>
-            </span>
-            <p><b>Availability:</b> In Stock</p>
-            <p><b>Condition:</b> New</p>
-            <p><b>Brand:</b> E-SHOPPER</p>
-            <a href=""><img src="~/images/product-details/share.png" class="share img-responsive" alt=""></a>
-        </div><!--/product-information-->
+        <form method="post" action="@Url.Action("Index", "Product")">
+            <div class="product-information">
+                <!--/product-information-->
+                <img src="~/images/product-details/new.jpg" class="newarrival" alt="">
+                <h2>@Model.ProductViewModel.Name</h2>
+                <p>@Model.ProductViewModel.Sku</p>
+                <img src="~/images/product-details/rating.png" alt="">
+
+                <span>
+                    <span>@Model.ProductViewModel.PriceCalculation.YourPrice.Amount</span>
+                    <label>Quantity:</label>
+                    <input id="Quality" name="Quality" type="text" value="1">
+                    <input name="Sku" id="product-sku" type="hidden" value="@Model.ProductViewModel.Sku" />
+                    <button type="submit" class="btn btn-fefault cart">
+                        <i class="fa fa-shopping-cart"></i>
+                        Add to cart
+                    </button>
+                </span>
+                <p>
+                    <b>Availability:</b> In Stock
+                </p>
+                <p>
+                    <b>Condition:</b> New
+                </p>
+                <p>
+                    <b>Brand:</b> E-SHOPPER
+                </p>
+                <a href=""><img src="~/images/product-details/share.png" class="share img-responsive" alt=""></a>
+            </div><!--/product-information-->
+        </form>
     </div>
 </div><!--/product-details-->
 

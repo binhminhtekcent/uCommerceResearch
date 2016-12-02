@@ -3223,7 +3223,10 @@
     </Compile>
     <Compile Include="App_Start\RouteConfig.cs" />
     <Compile Include="Common\UnitHelper.cs" />
+    <Compile Include="Controllers\BasketController.cs" />
+    <Compile Include="Controllers\CategoryController.cs" />
     <Compile Include="Controllers\CategoryTabController.cs" />
+    <Compile Include="Controllers\FacetsController.cs" />
     <Compile Include="Controllers\FeatureItemController.cs" />
     <Compile Include="Controllers\HomeController.cs" />
     <Compile Include="Controllers\NavigationController.cs" />
@@ -3436,6 +3439,9 @@
     <Content Include="Views\Product.cshtml" />
     <Content Include="Views\MacroPartials\Category_Tab.cshtml" />
     <Content Include="Views\MacroPartials\Header.cshtml" />
+    <Content Include="Views\PageTemplate.cshtml" />
+    <Content Include="Views\Basket.cshtml" />
+    <Content Include="Views\Catalog.cshtml" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>
