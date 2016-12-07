@@ -1,0 +1,97 @@
+﻿@{
+    Layout = "PageTemplate.cshtml";
+}
+@inherits Umbraco.Web.Mvc.UmbracoViewPage<uCommerceSiteDev.Models.PurchaseOrderViewModel>
+
+<form method="post" id="form-preview">
+    <section id="cart_items">
+        <div class="container">
+            <div class="breadcrumbs">
+                <ol class="breadcrumb">
+                    <li><a href="#">Home</a></li>
+                    <li class="active">Shopping Cart</li>
+                </ol>
+            </div>
+            <div class="table-responsive cart_info">
+
+                <table class="table table-condensed">
+                    <thead>
+                        <tr class="cart_menu">
+                            <td class="image">Item</td>
+                            <td class="description"></td>
+                            <td class="price">Price</td>
+                            <td class="quantity">Quantity</td>
+                            <td class="total">Total</td>
+                            <td></td>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        @for (var i = 0; i < Model.OrderLines.Count; i++)
+                        {
+                            var line = Model.OrderLines[i];
+                            @Html.HiddenFor(model => model.OrderLines[i].Sku)
+                            @Html.HiddenFor(model => model.OrderLines[i].VariantSku)
+                            @Html.HiddenFor(model => model.OrderLines[i].OrderLineId)
+
+                            <tr>
+                                <td class="cart_product">
+                                    <a href=""><img height="85" width="85" src="@line.Image" alt=""></a>
+                                </td>
+                                <td class="cart_description">
+                                    <h4><a href="">@line.ProductName</a></h4>
+                                    <p>@line.Sku</p>
+                                </td>
+                                <td class="cart_price">
+                                    <p>@line.Price</p>
+                                </td>
+                                <td class="cart_quantity">
+                                    <div class="cart_quantity_button">
+                                        @line.Quantity
+                                        @*<a class="cart_quantity_up" href=""> + </a>*@
+                                        @* @Html.TextBoxFor(model => model.OrderLines[i].Quantity, new { @class = "cart_quantity_input", autocomplete = "off", size = "2" })*@
+                                        @*<input class="cart_quantity_input" type="text" id="Quantity" name="Quantity" value="@line.Quantity" autocomplete="off" size="2">*@
+                                        @*@Html.TextBoxFor(model => model.OrderLines[i].Quantity, new { @class = "cart_quantity_input" })*@
+                                        @*<a class="cart_quantity_down" href=""> - </a>*@
+                                    </div>
+                                </td>
+                                <td class="cart_total">
+                                    <p class="cart_total_price">@line.Total</p>
+                                </td>
+                                @*<td class="cart_delete">
+                                    <button type="submit" value="@line.OrderLineId" name="RemoveOrderlineId" class="cart_quantity_delete"><i class="fa fa-times"></i></button>
+                                    <a class="cart_quantity_delete" href="#" value="@line.OrderLineId" name="RemoveOrderlineId" onclick="document.getElementById('form-basket').submit();"><i class="fa fa-times"></i></a>
+                                </td>*@
+                            </tr>
+                        }
+
+                    </tbody>
+                </table>
+
+            </div>
+        </div>
+    </section> <!--/#cart_items-->
+
+    <section id="do_action">
+        <div class="container">
+            @*<div class="heading">
+                <h3>What would you like to do next?</h3>
+                <p>Choose if you have a discount code or reward points you want to use or would like to estimate your delivery cost.</p>
+            </div>*@
+            <div class="row">
+                <div class="col-sm-6">
+                    <div class="total_area">
+                        <ul>
+                            <li>Cart Sub Total <span>@Model.SubTotal</span></li>
+                            <li>Eco Tax <span>@Model.TaxTotal</span></li>
+                            <li>Shipping Cost <span>Free</span></li>
+                            <li>Total <span>@Model.OrderTotal</span></li>
+                        </ul>
+                        @*<button name="update-basket" id="update-basket" class="btn btn-secondary update-basket" type="submit"><i class="icon-refresh icon-white"></i>Update</button>*@
+                        <a class="btn btn-default update" href="/basket/payment">Method Ship</a>
+                        <a class="btn btn-default check_out" href="#" onclick="document.getElementById('form-preview').submit();">Complete Order</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section><!--/#do_action-->
+</form>

@@ -3224,13 +3224,18 @@
     <Compile Include="App_Start\RouteConfig.cs" />
     <Compile Include="Common\UnitHelper.cs" />
     <Compile Include="Controllers\BasketController.cs" />
+    <Compile Include="Controllers\BillingController.cs" />
     <Compile Include="Controllers\CategoryController.cs" />
     <Compile Include="Controllers\CategoryTabController.cs" />
+    <Compile Include="Controllers\ConfirmationController.cs" />
     <Compile Include="Controllers\FacetsController.cs" />
     <Compile Include="Controllers\FeatureItemController.cs" />
     <Compile Include="Controllers\HomeController.cs" />
     <Compile Include="Controllers\NavigationController.cs" />
+    <Compile Include="Controllers\PaymentController.cs" />
+    <Compile Include="Controllers\PreviewController.cs" />
     <Compile Include="Controllers\ProductController.cs" />
+    <Compile Include="Controllers\ShippingController.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
@@ -3442,6 +3447,11 @@
     <Content Include="Views\PageTemplate.cshtml" />
     <Content Include="Views\Basket.cshtml" />
     <Content Include="Views\Catalog.cshtml" />
+    <Content Include="Views\Billing.cshtml" />
+    <Content Include="Views\Shipping.cshtml" />
+    <Content Include="Views\Payment.cshtml" />
+    <Content Include="Views\Preview.cshtml" />
+    <Content Include="Views\Confirmation.cshtml" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>
@@ -3455,8 +3465,13 @@
   <ItemGroup>
     <Folder Include="App_Data\" />
     <Folder Include="obj\Debug\TempPE\" />
+    <Folder Include="Views\Billing\" />
+    <Folder Include="Views\Confirmation\" />
     <Folder Include="Views\Navigation\" />
+    <Folder Include="Views\Payment\" />
+    <Folder Include="Views\Preview\" />
     <Folder Include="Views\Product\" />
+    <Folder Include="Views\Shipping\" />
   </ItemGroup>
   <ItemGroup>
     <Analyzer Include="..\packages\Microsoft.CodeAnalysis.Analyzers.1.0.0\analyzers\dotnet\cs\Microsoft.CodeAnalysis.Analyzers.dll" />

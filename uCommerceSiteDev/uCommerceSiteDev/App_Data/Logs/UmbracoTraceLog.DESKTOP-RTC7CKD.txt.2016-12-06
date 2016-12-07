@@ -1,0 +1,87 @@
+﻿ 2016-12-06 10:33:08,996 [P12700/D2/T75] INFO  Rhino.Licensing.AbstractLicenseValidator - License expiration date is 09/07/2014 00:34:00
+ 2016-12-06 10:33:23,734 [P12700/D2/T69] INFO  umbraco.BusinessLogic.Log - Log scrubbed.  Removed all items older than 2016-12-05 10:33:23
+ 2016-12-06 10:36:58,118 [P12700/D2/T70] INFO  Umbraco.Core.Security.BackOfficeSignInManager - Event Id: 0, state: Login attempt succeeded for username admin@test.com from IP address 127.0.0.1
+ 2016-12-06 10:36:58,118 [P12700/D2/T70] INFO  Umbraco.Core.Security.BackOfficeSignInManager - Event Id: 0, state: User: admin@test.com logged in from IP address 127.0.0.1
+ 2016-12-06 10:36:58,330 [P12700/D2/T84] INFO  Umbraco.Core.PluginManager - Starting resolution types of Umbraco.Web.Trees.TreeController
+ 2016-12-06 10:36:58,333 [P12700/D2/T84] INFO  Umbraco.Core.PluginManager - Completed resolution of types of Umbraco.Web.Trees.TreeController, found 0 (took 2ms)
+ 2016-12-06 11:13:41,484 [P12700/D2/T134] WARN  Umbraco.Web.Models.Mapping.PreValueDisplayResolver - Could not find persisted pre-value for field default
+ 2016-12-06 11:13:41,515 [P12700/D2/T149] WARN  Umbraco.Web.Models.Mapping.PreValueDisplayResolver - Could not find persisted pre-value for field values
+ 2016-12-06 11:13:41,525 [P12700/D2/T64] WARN  Umbraco.Web.Models.Mapping.PreValueDisplayResolver - Could not find persisted pre-value for field values
+ 2016-12-06 11:13:41,525 [P12700/D2/T68] WARN  Umbraco.Web.Models.Mapping.PreValueDisplayResolver - Could not find persisted pre-value for field values
+ 2016-12-06 11:13:41,527 [P12700/D2/T149] WARN  Umbraco.Web.Models.Mapping.PreValueDisplayResolver - Could not find persisted pre-value for field values
+ 2016-12-06 11:13:41,527 [P12700/D2/T61] WARN  Umbraco.Web.Models.Mapping.PreValueDisplayResolver - Could not find persisted pre-value for field default
+ 2016-12-06 11:17:36,812 [P12700/D2/T135] INFO  Umbraco.Core.PluginManager - Starting resolution types of umbraco.interfaces.ICacheRefresher
+ 2016-12-06 11:17:36,895 [P12700/D2/T135] INFO  Umbraco.Core.PluginManager - Completed resolution of types of umbraco.interfaces.ICacheRefresher, found 0 (took 82ms)
+ 2016-12-06 11:19:40,969 [P12700/D2/T116] INFO  Umbraco.Web.Editors.AuthenticationController - User admin@test.com from IP address 127.0.0.1 has logged out
+ 2016-12-06 11:19:49,667 [P12700/D2/T61] INFO  Umbraco.Core.Security.BackOfficeSignInManager - Event Id: 0, state: Login attempt failed for username test1@test.com from IP address 127.0.0.1
+ 2016-12-06 11:19:55,843 [P12700/D2/T134] INFO  Umbraco.Core.Security.BackOfficeSignInManager - Event Id: 0, state: Login attempt failed for username test1@test.com from IP address 127.0.0.1
+ 2016-12-06 11:19:58,237 [P12700/D2/T135] INFO  Umbraco.Core.Security.BackOfficeSignInManager - Event Id: 0, state: Login attempt failed for username test1@test.com from IP address 127.0.0.1
+ 2016-12-06 11:20:06,590 [P12700/D2/T61] INFO  Umbraco.Core.Security.BackOfficeSignInManager - Event Id: 0, state: Login attempt succeeded for username admin@test.com from IP address 127.0.0.1
+ 2016-12-06 11:20:06,590 [P12700/D2/T61] INFO  Umbraco.Core.Security.BackOfficeSignInManager - Event Id: 0, state: User: admin@test.com logged in from IP address 127.0.0.1
+ 2016-12-06 11:20:32,590 [P12700/D2/T161] INFO  Umbraco.Web.Editors.AuthenticationController - User admin@test.com from IP address 127.0.0.1 has logged out
+ 2016-12-06 11:20:40,421 [P12700/D2/T116] INFO  Umbraco.Core.Security.BackOfficeSignInManager - Event Id: 0, state: Login attempt failed for username test1@test.com from IP address 127.0.0.1
+ 2016-12-06 11:20:46,754 [P12700/D2/T136] INFO  Umbraco.Core.Security.BackOfficeSignInManager - Event Id: 0, state: Login attempt failed for username test1@test.com from IP address 127.0.0.1
+ 2016-12-06 11:20:48,724 [P12700/D2/T161] INFO  Umbraco.Core.Security.BackOfficeSignInManager - Event Id: 0, state: Login attempt failed for username test1@test.com from IP address 127.0.0.1
+ 2016-12-06 11:20:57,684 [P12700/D2/T137] INFO  Umbraco.Core.Security.BackOfficeSignInManager - Event Id: 0, state: Login attempt succeeded for username admin@test.com from IP address 127.0.0.1
+ 2016-12-06 11:20:57,684 [P12700/D2/T137] INFO  Umbraco.Core.Security.BackOfficeSignInManager - Event Id: 0, state: User: admin@test.com logged in from IP address 127.0.0.1
+ 2016-12-06 11:24:34,005 [P12700/D2/T134] INFO  Umbraco.Web.Editors.AuthenticationController - User admin@test.com from IP address 127.0.0.1 has logged out
+ 2016-12-06 11:24:49,100 [P12700/D2/T134] INFO  Umbraco.Core.Security.BackOfficeSignInManager - Event Id: 0, state: Login attempt succeeded for username test1 from IP address 127.0.0.1
+ 2016-12-06 11:24:49,100 [P12700/D2/T134] INFO  Umbraco.Core.Security.BackOfficeSignInManager - Event Id: 0, state: User: test1 logged in from IP address 127.0.0.1
+ 2016-12-06 11:25:17,226 [P12700/D2/T135] INFO  Umbraco.Web.Editors.AuthenticationController - User test1 from IP address 127.0.0.1 has logged out
+ 2016-12-06 11:25:19,253 [P12700/D2/T136] INFO  Umbraco.Core.Security.BackOfficeSignInManager - Event Id: 0, state: Login attempt succeeded for username admin@test.com from IP address 127.0.0.1
+ 2016-12-06 11:25:19,253 [P12700/D2/T136] INFO  Umbraco.Core.Security.BackOfficeSignInManager - Event Id: 0, state: User: admin@test.com logged in from IP address 127.0.0.1
+ 2016-12-06 11:25:41,023 [P12700/D2/T137] INFO  Umbraco.Web.Editors.AuthenticationController - User admin@test.com from IP address 127.0.0.1 has logged out
+ 2016-12-06 11:25:55,230 [P12700/D2/T29] INFO  Umbraco.Core.Security.BackOfficeSignInManager - Event Id: 0, state: Login attempt succeeded for username test1 from IP address 127.0.0.1
+ 2016-12-06 11:25:55,230 [P12700/D2/T29] INFO  Umbraco.Core.Security.BackOfficeSignInManager - Event Id: 0, state: User: test1 logged in from IP address 127.0.0.1
+ 2016-12-06 11:26:12,060 [P12700/D2/T124] INFO  Umbraco.Web.Editors.AuthenticationController - User test1 from IP address 127.0.0.1 has logged out
+ 2016-12-06 11:26:13,837 [P12700/D2/T124] INFO  Umbraco.Core.Security.BackOfficeSignInManager - Event Id: 0, state: Login attempt succeeded for username admin@test.com from IP address 127.0.0.1
+ 2016-12-06 11:26:13,837 [P12700/D2/T124] INFO  Umbraco.Core.Security.BackOfficeSignInManager - Event Id: 0, state: User: admin@test.com logged in from IP address 127.0.0.1
+ 2016-12-06 11:26:56,368 [P12700/D2/T65] INFO  Umbraco.Web.Editors.AuthenticationController - User admin@test.com from IP address 127.0.0.1 has logged out
+ 2016-12-06 11:27:11,293 [P12700/D2/T29] INFO  Umbraco.Core.Security.BackOfficeSignInManager - Event Id: 0, state: Login attempt succeeded for username test1 from IP address 127.0.0.1
+ 2016-12-06 11:27:11,293 [P12700/D2/T29] INFO  Umbraco.Core.Security.BackOfficeSignInManager - Event Id: 0, state: User: test1 logged in from IP address 127.0.0.1
+ 2016-12-06 11:27:37,540 [P12700/D2/T29] INFO  Umbraco.Core.PluginManager - Starting resolution types of Umbraco.Web.Trees.TreeController
+ 2016-12-06 11:27:37,540 [P12700/D2/T29] INFO  Umbraco.Core.PluginManager - Completed resolution of types of Umbraco.Web.Trees.TreeController, found 0 (took 0ms)
+ 2016-12-06 11:27:49,930 [P12700/D2/T65] INFO  Umbraco.Web.Editors.AuthenticationController - User test1 from IP address 127.0.0.1 has logged out
+ 2016-12-06 11:28:00,396 [P12700/D2/T130] INFO  Umbraco.Core.Security.BackOfficeSignInManager - Event Id: 0, state: Login attempt succeeded for username admin@test.com from IP address 127.0.0.1
+ 2016-12-06 11:28:00,396 [P12700/D2/T130] INFO  Umbraco.Core.Security.BackOfficeSignInManager - Event Id: 0, state: User: admin@test.com logged in from IP address 127.0.0.1
+ 2016-12-06 11:30:31,056 [P12700/D2/T29] INFO  Umbraco.Web.Editors.AuthenticationController - User admin@test.com from IP address 127.0.0.1 has logged out
+ 2016-12-06 11:30:42,967 [P12700/D2/T149] INFO  Umbraco.Core.Security.BackOfficeSignInManager - Event Id: 0, state: Login attempt succeeded for username test1 from IP address 127.0.0.1
+ 2016-12-06 11:30:42,967 [P12700/D2/T149] INFO  Umbraco.Core.Security.BackOfficeSignInManager - Event Id: 0, state: User: test1 logged in from IP address 127.0.0.1
+ 2016-12-06 11:33:08,995 [P12700/D2/T29] INFO  Rhino.Licensing.AbstractLicenseValidator - License expiration date is 09/07/2014 00:34:00
+ 2016-12-06 11:35:23,418 [P12700/D2/T134] INFO  Umbraco.Web.Editors.AuthenticationController - User test1 from IP address 127.0.0.1 has logged out
+ 2016-12-06 11:35:25,444 [P12700/D2/T61] INFO  Umbraco.Core.Security.BackOfficeSignInManager - Event Id: 0, state: Login attempt succeeded for username admin@test.com from IP address 127.0.0.1
+ 2016-12-06 11:35:25,444 [P12700/D2/T61] INFO  Umbraco.Core.Security.BackOfficeSignInManager - Event Id: 0, state: User: admin@test.com logged in from IP address 127.0.0.1
+ 2016-12-06 12:08:10,451 [P12700/D2/T31] INFO  Umbraco.Core.Logging.OwinLogger - Event Id: 0, state: User logged will be logged out due to timeout: admin@test.com, IP Address: 127.0.0.1
+ 2016-12-06 12:33:09,010 [P12700/D2/T16] INFO  Rhino.Licensing.AbstractLicenseValidator - License expiration date is 09/07/2014 00:34:00
+ 2016-12-06 13:33:09,013 [P12700/D2/T130] INFO  Rhino.Licensing.AbstractLicenseValidator - License expiration date is 09/07/2014 00:34:00
+ 2016-12-06 14:33:09,028 [P12700/D2/T29] INFO  Rhino.Licensing.AbstractLicenseValidator - License expiration date is 09/07/2014 00:34:00
+ 2016-12-06 14:33:23,789 [P12700/D2/T69] INFO  umbraco.BusinessLogic.Log - Log scrubbed.  Removed all items older than 2016-12-05 14:33:23
+ 2016-12-06 15:33:09,030 [P12700/D2/T136] INFO  Rhino.Licensing.AbstractLicenseValidator - License expiration date is 09/07/2014 00:34:00
+ 2016-12-06 16:33:09,042 [P12700/D2/T128] INFO  Rhino.Licensing.AbstractLicenseValidator - License expiration date is 09/07/2014 00:34:00
+ 2016-12-06 17:33:09,057 [P12700/D2/T80] INFO  Rhino.Licensing.AbstractLicenseValidator - License expiration date is 09/07/2014 00:34:00
+ 2016-12-06 18:16:13,046 [P12700/D2/T183] INFO  Umbraco.Core.Security.BackOfficeSignInManager - Event Id: 0, state: Login attempt succeeded for username admin@test.com from IP address 127.0.0.1
+ 2016-12-06 18:16:13,046 [P12700/D2/T183] INFO  Umbraco.Core.Security.BackOfficeSignInManager - Event Id: 0, state: User: admin@test.com logged in from IP address 127.0.0.1
+ 2016-12-06 18:16:13,178 [P12700/D2/T123] INFO  Umbraco.Core.PluginManager - Starting resolution types of Umbraco.Web.Trees.TreeController
+ 2016-12-06 18:16:13,179 [P12700/D2/T123] INFO  Umbraco.Core.PluginManager - Completed resolution of types of Umbraco.Web.Trees.TreeController, found 0 (took 0ms)
+ 2016-12-06 18:33:09,056 [P12700/D2/T123] INFO  Rhino.Licensing.AbstractLicenseValidator - License expiration date is 09/07/2014 00:34:00
+ 2016-12-06 18:33:23,853 [P12700/D2/T5] INFO  umbraco.BusinessLogic.Log - Log scrubbed.  Removed all items older than 2016-12-05 18:33:23
+ 2016-12-06 18:35:52,458 [P12700/D2/T183] INFO  Umbraco.Core.Logging.OwinLogger - Event Id: 0, state: User logged will be logged out due to timeout: admin@test.com, IP Address: 127.0.0.1
+ 2016-12-06 18:48:18,299 [P12700/D2/T145] ERROR Umbraco.Web.Strategies.ServerRegistrationEventHandler - Failed to update server record in database.
+System.Data.SqlClient.SqlException (0x80131904): Execution Timeout Expired.  The timeout period elapsed prior to completion of the operation or the server is not responding. ---> System.ComponentModel.Win32Exception (0x80004005): The wait operation timed out
+   at System.Data.SqlClient.SqlConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at System.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj, Boolean callerHasConnectionLock, Boolean asyncClose)
+   at System.Data.SqlClient.TdsParser.TryRun(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj, Boolean& dataReady)
+   at System.Data.SqlClient.TdsParser.Run(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj)
+   at System.Data.SqlClient.TdsParser.TdsExecuteTransactionManagerRequest(Byte[] buffer, TransactionManagerRequestType request, String transactionName, TransactionManagerIsolationLevel isoLevel, Int32 timeout, SqlInternalTransaction transaction, TdsParserStateObject stateObj, Boolean isDelegateControlRequest)
+   at System.Data.SqlClient.SqlInternalConnectionTds.ExecuteTransactionYukon(TransactionRequest transactionRequest, String transactionName, IsolationLevel iso, SqlInternalTransaction internalTransaction, Boolean isDelegateControlRequest)
+   at System.Data.SqlClient.SqlInternalTransaction.Commit()
+   at System.Data.SqlClient.SqlTransaction.Commit()
+   at Umbraco.Core.Persistence.Database.CleanupTransaction()
+   at Umbraco.Core.Persistence.Transaction.Complete()
+   at Umbraco.Core.Persistence.LockingRepository`1.WithWriteLocked(Action`1 action, Boolean autoCommit)
+   at Umbraco.Core.Services.ServerRegistrationService.TouchServer(String serverAddress, String serverIdentity, TimeSpan staleTimeout)
+   at Umbraco.Web.Strategies.ServerRegistrationEventHandler.TouchServerTask.PerformRun()
+ClientConnectionId:5663fe91-9df4-461b-8fda-63220c73ef6e
+Error Number:-2,State:0,Class:11
+ 2016-12-06 19:33:09,055 [P12700/D2/T123] INFO  Rhino.Licensing.AbstractLicenseValidator - License expiration date is 09/07/2014 00:34:00
+ 2016-12-06 20:33:09,056 [P12700/D2/T118] INFO  Rhino.Licensing.AbstractLicenseValidator - License expiration date is 09/07/2014 00:34:00
